@@ -7,4 +7,3 @@ Useful links:
 	- Setup cucumber + java + maven:
 		- https://www.axelerant.com/resources/team-blog/setup-for-selenium-with-cucumber-using-maven
 
-
