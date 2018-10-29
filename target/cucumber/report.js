@@ -39,4 +39,45 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.uri("features/login.feature");
+formatter.feature({
+  "name": "As a user I want to log in my application",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "Login",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "I am on home page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "seleniumSteps.goToHomePage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I insert User Information",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "seleniumSteps.insertUserInfo()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I see the welcome message \"Welcome back to Mercury Tours!\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "seleniumSteps.iAmLoggedIn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
 });
