@@ -12,9 +12,13 @@ Scenario Outline: Many Logins
 	
 	Examples: 
 		|username|password|
-		|"0dJSe@"| "test1" |
+		|"0dJSe@"| "test1"|
 		|"001023"| "test2"|
 		|"admin1"| "test3"|
 		|"m"     | "test4"|
+
 		
-		
+Scenario: Check cruises
+	Given I am logged in
+	When I go to the cruises page
+	Then I see a list of avaiable cruises
